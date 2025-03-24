@@ -74,6 +74,9 @@ $ git remote -v
 # Add new remote 
 $ git remote add <remote_name> <remote_address>
 
+# Edit remote
+$ git remote set-url origin <NEW_GIT_URL_HERE>
+
 # push to remote 
 $ git push <remote_name> <local_branch_name>
 ```
