@@ -56,10 +56,16 @@ $ git merge A
 Working with remotes 
 ```bash
 # First genrate SSH keypair 
-$ ssh-keygen -o 
+$ ssh-keygen -o
 
 # Get the public key at paste it into github settings 
 $ cat ~/.ssh/id_rsa.pub
+
+# Another way for keygen
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_ed25519
+$ cat ~/.ssh/id_ed25519.pub
 
 # Get synced remotes 
 $ git remote 
