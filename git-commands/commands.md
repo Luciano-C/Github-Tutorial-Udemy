@@ -123,3 +123,12 @@ $ git switch -                  # move HEAD back to previous position
 $ git switch -c <new-branch>    # create new branch from current commit
 ```
 
+Tags
+```bash
+$ git tag                                       # See tags
+$ git tag -d <tag-name>                         # Delete tag
+$ git tag -a <tag-name> -m <message>            # Create annotated tag
+$ git tag -a <tag-name> -m <message> <hash>     # Create annotated tag at a given commit
+$ git push --tags                               # Pushes created tags to remote
+$ git checkout <tag-name>                       # Go to the tag commit
+```
