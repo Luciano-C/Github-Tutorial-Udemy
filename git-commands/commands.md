@@ -132,3 +132,10 @@ $ git tag -a <tag-name> -m <message> <hash>     # Create annotated tag at a give
 $ git push --tags                               # Pushes created tags to remote
 $ git checkout <tag-name>                       # Go to the tag commit
 ```
+
+
+Cleaning
+```bash
+$ git gc                                        # Cleans garbage and compresses objects
+$ git gc --aggressive                           # Cleans aggresively. Slower. Not needed most of the time
+```
